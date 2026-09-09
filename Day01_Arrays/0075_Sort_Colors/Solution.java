@@ -25,6 +25,8 @@ class Solution {
             }
         }
     }
+     private void swap(int[] nums, int i, int j) {
+        
 
    
     }
