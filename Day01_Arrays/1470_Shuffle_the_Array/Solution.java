@@ -12,5 +12,9 @@ class Solution {
             result [index] = nums[n+i];
              index++;
 
+             }
+
+      
+
        
            
