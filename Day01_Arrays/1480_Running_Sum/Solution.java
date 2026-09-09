@@ -9,7 +9,10 @@ class Solution {
             sum=sum+nums[i];
              nums[i]=sum;
         }
-         return nums;      
+         return nums;    
+        }
+
+
     
        
 
