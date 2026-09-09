@@ -14,6 +14,7 @@ class Solution {
 
             if (digit%2==0){
                 count++;
+            }
                             
         }
  return count;    
