@@ -10,6 +10,10 @@ class Solution {
             ans[num]= nums[num];
             
             ans[num+n]= nums[num];
+                    }
+        return ans;
+
+
 
 
 
