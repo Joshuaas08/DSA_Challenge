@@ -13,5 +13,5 @@ rotated arrays, boundaries, peaks, and selection problems.
 - Find boundaries using Binary Search
 - Find minimum values using Binary Search
 - Understand Binary Search based on increasing/decreasing patterns
-- Practice sorting and selection
+
 
