@@ -10,4 +10,4 @@ shrink the search space:
 
 `left++` and `right--`
 
-Duplicates can break the normal Binary Search decision, 
+Duplicates can break the normal Binary Search decision, so handle them separately.
