@@ -1,24 +1,21 @@
 class Solution {
-    public int subarraysDivByK(int[] nums, int k) {
+    public int maxProduct(int[] nums) {
+        int maxProd = nums[0];
+        int minProd = nums[0];
+        int answer = nums[0];
 
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);
-        int prefixSum=0;
-        int count=0;
-
-        for(int num: nums){
-            prefixSum+=num;
-
-            int remainder = prefixSum % k;
-            if (remainder<0){
-                remainder+=k;
+        for (int i=1;i<nums.length;i++){
+            if (nums[i]<0){
+                int temp = maxProd;
+                maxProd=minProd;
+                minProd=temp;
             }
-            if (map.containsKey(remainder)){
-                count+=map.get(remainder);
-            }
-            map.put(remainder,map.getOrDefault(remainder,0)+1);
+            maxProd = Math.max(nums[i],maxProd*nums[i]);
+            minProd = Math.min(nums[i],minProd*nums[i]);
+
+            answer = Math.max(answer,maxProd);
         }
-        return count;
+        return answer;
         
     }
 }
